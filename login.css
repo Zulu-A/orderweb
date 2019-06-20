@@ -1,0 +1,150 @@
+*
+body
+{   
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+    background: url(images/85mm-analogue-aperture-247769.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    min-height:900px;
+}
+
+h1 /*pixelmaps*/
+{
+    color:rgb(236, 131, 45);
+    margin-top: 0px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo
+{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.Backbutton
+{
+    
+    justify-content: center;
+    margin-right: 470px;
+}
+#arrange
+{
+    top: 0px;
+    float: right;
+}
+
+/*............................button 1 definition....................*/
+a.button1
+{
+    /* display:inline-block; */
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    /* box-sizing: border-box; */
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
+a.button1:hover
+{
+    color:rgb(236, 131, 45);
+    background-color: black;
+}
+
+@media all and (max-width:30em)
+{
+a.button1
+{
+    /* display:block; */
+    /* margin:0.4em auto; */
+}
+}
+/*.......................................................................*/
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+
+.main {
+    padding: 0px 10px;
+    color: #FFF;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 50%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
