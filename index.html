@@ -62,7 +62,7 @@
       <div class="container">
             <div class="row">
               <div class="col-md">
-                  <a href="login.html"><button type="button" style="float:right;" class="btn btn-outline-light">Log in</button></a>
+                  <a href="login.html"><button id="hr1" type="button" style="float:right;" class="btn btn-outline-light">Log in</button></a>
 
               </div>
               <div class="col-md">
@@ -100,7 +100,28 @@
               <p><strong style="color: orange;">Email address: </strong><a href="mailto:alvinreaders@gmail.com">pmfoods@gmail.com </a>.</p>
               <p><strong style="color: orange;">© 2019 PM Foods. All Rights Reserved</strong></p>
           </div>
-       
+
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#config-web-app -->
+
+      <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+              apiKey: "AIzaSyAnQY3fT_WDo8qO6BBRp83cOXwZb4dkRqs",
+              authDomain: "orderweb-78760.firebaseapp.com",
+              databaseURL: "https://orderweb-78760.firebaseio.com",
+              projectId: "orderweb-78760",
+              storageBucket: "orderweb-78760.appspot.com",
+              messagingSenderId: "698219281129",
+              appId: "1:698219281129:web:e5fe7b6ca7f45994"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+      </script>
+      <script src="js/logout.js"></script>
    </body>
    
    

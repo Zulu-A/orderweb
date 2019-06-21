@@ -9,6 +9,7 @@
    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700'>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+       <script src="js/jquery-3.4.1.min.js"></script>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    </head>
    
@@ -34,31 +35,34 @@
          <div class="main">
             <div class="col-md-6 col-sm-12">
                <div class="login-form">
-                  <form>
+
+                   <div class="form-group">
+                       <p id="msg1"></p>
+                   </div>
+
                      <div class="form-group">
                         <label>First Name</label>
-                        <input type="text" class="form-control" placeholder="FirstName">
+                        <input type="text" class="form-control" placeholder="FirstName" id="fname">
                      </div>
                      <div class="form-group">
                             <label>Last Name</label>
-                            <input type="text" class="form-control" placeholder="LastName">
+                            <input type="text" class="form-control" placeholder="LastName" id="lname">
                          </div>
                          <div class="form-group">
                                 <label>Email address</label>
-                                <input type="email" class="form-control" placeholder="email">
+                                <input type="email" class="form-control" placeholder="email" id="emailaddress">
                              </div>
                      <div class="form-group">
                         <label>New Password</label>
-                        <input type="password" class="form-control" placeholder="NewPassword">
+                        <input type="password" class="form-control" placeholder="NewPassword" id="regPassword">
                      </div>
                      <div class="form-group">
                             <label>Confirm Password</label>
-                            <input type="password" class="form-control" placeholder="ConfirmPassword">
+                            <input type="password" class="form-control" placeholder="ConfirmPassword" id="confirmPassword">
                          </div>
-                     <button type="submit" class="btn btn-black" style="color:orange;">Register</button>
+                     <button id="register_btn" class="btn btn-black" style="color:orange;">Register</button>
                     <!-- <a href = "login.html"><button type="submit" class="btn btn-black" style="color:orange;">Already have an account?</button> </a>  -->
                     <a class="btn btn-black" style="color:orange;" href="Login.html">Already have an account?</a>
-                  </form>
                </div>
             </div>
          </div>
@@ -67,6 +71,27 @@
                 <a href="index.html" style="color:orange;" class="btn btn-outline-light" class="previous">&laquo;Back</a>
          </div>
 
+   <script src="js/register.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#config-web-app -->
+
+      <script>
+          // Your web app's Firebase configuration
+          const firebaseConfig = {
+              apiKey: "AIzaSyAnQY3fT_WDo8qO6BBRp83cOXwZb4dkRqs",
+              authDomain: "orderweb-78760.firebaseapp.com",
+              databaseURL: "https://orderweb-78760.firebaseio.com",
+              projectId: "orderweb-78760",
+              storageBucket: "orderweb-78760.appspot.com",
+              messagingSenderId: "698219281129",
+              appId: "1:698219281129:web:e5fe7b6ca7f45994"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+      </script>
    </body>
 
    </html>
