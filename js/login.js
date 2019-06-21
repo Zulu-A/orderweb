@@ -1,6 +1,8 @@
 function loginWithEmail(email, password) {
     firebase.auth().signInWithEmailAndPassword(email, password).then(function (success) {
         console.log('successful signin!!');
+        document.getElementById('msg2').classList.remove('alert-danger');
+        document.getElementById('msg2').classList.add('alert-success');
         document.getElementById('msg2').innerHTML = 'successful sign in! Redirecting...';
         setTimeout(function () {
             window.location.href = 'index.html';
@@ -11,6 +13,8 @@ function loginWithEmail(email, password) {
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
+        document.getElementById('msg2').classList.remove('alert-success');
+        document.getElementById('msg2').classList.add('alert-danger');
         document.getElementById('msg2').innerHTML = errorMessage;
         console.log(errorMessage);
     });
