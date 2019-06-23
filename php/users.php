@@ -2,8 +2,8 @@
 
 <?php
 $servername = "localhost";
-$username = "orderweb";
-$password = "orderweb";
+$username = "root";
+$password = "";
 $dbname = "orderweb";
 
 $dbemail = $_POST['dbemail'];
