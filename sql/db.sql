@@ -7,8 +7,11 @@
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
+create database orderweb;
+use orderweb;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
+
 
 --
 -- Database: `orderweb`
