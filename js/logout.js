@@ -10,6 +10,7 @@ firebase.auth().onAuthStateChanged(function(user) {
         var providerData = user.providerData;
         // ...
 
+        document.getElementById('ordernow').hidden = false;
         document.getElementById('row2').hidden = false;
         document.getElementById('row1').hidden = true;
 
@@ -26,6 +27,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
         document.getElementById('row2').hidden = true;
         document.getElementById('row1').hidden = false;
+        document.getElementById('ordernow').hidden = true;
         // User is signed out.
         // ...
         console.log('signed out');
