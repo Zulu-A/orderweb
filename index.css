@@ -21,6 +21,11 @@ h1 /*pixelmaps*/
     font-family: 'Montserrat', sans-serif;
 }
 
+#hr2
+{
+position: relative;
+    left: 504px;
+}
 
 h3 /*Is your shoot for business or personal*/
 {

@@ -10,9 +10,12 @@ firebase.auth().onAuthStateChanged(function(user) {
         var providerData = user.providerData;
         // ...
 
+        document.getElementById('row2').hidden = false;
+        document.getElementById('row1').hidden = true;
+
         console.log(user);
-        document.getElementById('hr1').innerText = 'Log Out';
-        $('#hr1').on('click',function () {
+        document.getElementById('hr2').innerText = 'Log Out';
+        $('#hr2').on('click',function () {
             firebase.auth().signOut().then(function() {
                 // Sign-out successful.
             }, function(error) {
@@ -20,11 +23,14 @@ firebase.auth().onAuthStateChanged(function(user) {
             });
         });
     } else {
+
+        document.getElementById('row2').hidden = true;
+        document.getElementById('row1').hidden = false;
         // User is signed out.
         // ...
         console.log('signed out');
         setTimeout(function () {
             window.location.href = 'login.html';
-        },1000);
+        },10000);
     }
 });

@@ -27,14 +27,18 @@
 
 
       <div class="sidenav">
-            <div class="login-main-text">
+            <div class="login-main-text" id="text1">
                <h2>Application<br> Login Page</h2>
                <p>Login or register from here to access.</p>
+            </div>
+          <div class="login-main-text" id="text2" hidden>
+               <h2>Administrator<br> Login Page</h2>
+               <p>Login for admin access.</p>
             </div>
          </div>
          <div class="main">
             <div class="col-md-6 col-sm-12">
-               <div class="login-form">
+               <div class="login-form" id="loginnormal">
                       <div class="form-group">
                           <p id="msg2" class="alert"></p>
                       </div>
@@ -48,7 +52,30 @@
                      </div>
                      <button id="loginbtn" class="btn btn-black" style="color:orange;">Login</button>
                      <a class="btn btn-black" style="color:orange;" href="Register.html">Register</a>
+                   <div>
+                       <input type="checkbox" >
+                       <span>Admin Login</span>
+                   </div>
                   
+               </div>
+                <div class="login-form" id="loginadmin" hidden>
+                      <div class="form-group">
+                          <p id="msg3" class="alert"></p>
+                      </div>
+                     <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" placeholder="Email" value="admin@orderweb.com" id="lemailadmin" disabled>
+                     </div>
+                     <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="Password" id="lpwdadmin">
+                     </div>
+                     <button id="loginbtn2" class="btn btn-black" style="color:orange;">Login</button>
+                   <div>
+                       <input type="checkbox" >
+                       <span>Admin Login</span>
+                   </div>
+
                </div>
             </div>
          </div>
@@ -69,16 +96,37 @@
       <script>
           // Your web app's Firebase configuration
           var firebaseConfig = {
-              apiKey: "AIzaSyAnQY3fT_WDo8qO6BBRp83cOXwZb4dkRqs",
-              authDomain: "orderweb-78760.firebaseapp.com",
-              databaseURL: "https://orderweb-78760.firebaseio.com",
-              projectId: "orderweb-78760",
-              storageBucket: "orderweb-78760.appspot.com",
-              messagingSenderId: "698219281129",
-              appId: "1:698219281129:web:e5fe7b6ca7f45994"
+              apiKey: "AIzaSyCOJ8pkJzo3k1X_HOBc3qxINmktRb8hP2c",
+              authDomain: "orderweb-6fcda.firebaseapp.com",
+              databaseURL: "https://orderweb-6fcda.firebaseio.com",
+              projectId: "orderweb-6fcda",
+              storageBucket: "",
+              messagingSenderId: "821925807231",
+              appId: "1:821925807231:web:dc2ce96473af3275"
           };
           // Initialize Firebase
           firebase.initializeApp(firebaseConfig);
+
+
+
+          $(document).ready(function(){
+              $('input[type="checkbox"]').click(function(){
+                  if($(this).prop("checked") == true){
+                      document.getElementById('text1').hidden = true;
+                      document.getElementById('text2').hidden = false;
+
+                      document.getElementById('loginnormal').hidden = true;
+                      document.getElementById('loginadmin').hidden = false;
+                  }
+                  else if($(this).prop("checked") == false){
+                      document.getElementById('text1').hidden = false;
+                      document.getElementById('text2').hidden = true;
+
+                      document.getElementById('loginnormal').hidden = false;
+                      document.getElementById('loginadmin').hidden = true;
+                  }
+              });
+          });
       </script>
    </body>
 

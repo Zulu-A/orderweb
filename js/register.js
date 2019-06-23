@@ -1,11 +1,18 @@
 function createusers(email,password) {
     firebase.auth().createUserWithEmailAndPassword(email, password).then(function (success) {
         console.log('successful signin... ');
-        document.getElementById('msg1').value = 'Successful signin';
+        console.log(success);
+        document.getElementById('msg1').classList.remove('alert-danger');
+        document.getElementById('msg1').classList.add('alert-success');
+        document.getElementById('msg1').innerHTML = 'Signup successful for '+ email;
 
         var fname = document.getElementById('fname').value;
         var lname = document.getElementById('lname').value;
         sendata(fname,lname,email,password);
+
+        setTimeout(function () {
+            window.location.href = 'index.html';
+        },5000);
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -13,6 +20,8 @@ function createusers(email,password) {
         // ...
 
         console.log(error);
+        document.getElementById('msg1').classList.remove('alert-success');
+        document.getElementById('msg1').classList.add('alert-danger');
         document.getElementById('msg1').innerHTML = errorMessage;
     });
 }
