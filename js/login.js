@@ -7,9 +7,15 @@ function loginWithEmail(email, password) {
         document.getElementById('msg3').classList.add('alert-success');
         document.getElementById('msg2').innerHTML = 'successful sign in! Redirecting...';
         document.getElementById('msg3').innerHTML = 'successful sign in! Redirecting...';
-        setTimeout(function () {
-            window.location.href = 'index.html';
-        },3000);
+        if (email == 'admin@orderweb.com') {
+            setTimeout(function () {
+                window.location.href = 'adminpage.html';
+            },3000);
+        }else {
+            setTimeout(function () {
+                window.location.href = 'order.html';
+            },3000);
+        }
 
     }).catch(function(error) {
         // Handle Errors here.

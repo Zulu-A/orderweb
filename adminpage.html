@@ -78,6 +78,55 @@
             </div>
          </div>
       </div>
+
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+
+   <script>
+
+       var firebaseConfig = {
+           apiKey: "AIzaSyCOJ8pkJzo3k1X_HOBc3qxINmktRb8hP2c",
+           authDomain: "orderweb-6fcda.firebaseapp.com",
+           databaseURL: "https://orderweb-6fcda.firebaseio.com",
+           projectId: "orderweb-6fcda",
+           storageBucket: "",
+           messagingSenderId: "821925807231",
+           appId: "1:821925807231:web:dc2ce96473af3275"
+       };
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+
+       var user = firebase.auth().currentUser;
+       var name, email, photoUrl, uid, emailVerified;
+
+       if (user != null) {
+           name = user.displayName;
+           email = user.email;
+           photoUrl = user.photoURL;
+           emailVerified = user.emailVerified;
+           uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                            // this value to authenticate with your backend server, if
+                            // you have one. Use User.getToken() instead.
+       }
+
+
+       firebase.auth().onAuthStateChanged(function(user) {
+           if (user) {
+               // User is signed in.
+
+               console.log(user.email);
+
+               if (user.email != 'admin@orderweb.com') {
+                   window.location.href = 'order.html';
+               }
+
+
+           } else {
+               // No user is signed in.
+           }
+       });
+
+   </script>
       
       </body>
    
