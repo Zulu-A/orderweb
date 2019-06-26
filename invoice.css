@@ -1,0 +1,225 @@
+*
+body
+{   
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: orange;
+    background: url(images/bluck.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    min-height:700px;
+}
+
+h1 /*pixelmaps*/
+{
+    color:rgb(236, 131, 45);
+    margin-top: 0px;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h3 /*Is your shoot for business or personal*/
+{
+    color:white;
+    /* position: absolute; */
+    font-size: 33px;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;  
+}
+.centeralign{
+    /* height:300px; */
+    width:100%;
+    text-align:center;
+    display: inline-block;
+    /* position: absolute;
+    top:330px;
+    left: 30px; */
+    color: rgb(236, 131, 45);
+    /* text-align: center; */
+    font-size: 20px;
+}
+
+#top
+{
+    color: white;
+    font-size: 25px;
+    padding: 5px;
+}
+#tops
+{
+    color: orange;
+    font-size: 25px;
+    /* padding: 20px; */
+}
+
+#leftit
+{   
+    color: white;
+    font-size: 21px;
+}
+
+/*footer.........................*/
+.footer {
+  position: absolute;
+  left: 0px;
+  top: 1380px;
+  width: 100%;
+  height: 250px;
+  background-color:black; opacity: 20%;
+/*
+  border-style: solid;
+  border-top: 5;
+  border-top-color: white;
+*/
+  text-align: center;
+}
+/*...............................*/
+
+.text-my-own-color {
+    color:rgb(236, 131, 45) !important;
+  }
+
+/*.....................header...............*/
+header{
+    background: #fff;
+    margin-bottom:20px;
+}
+
+.logo{
+    float: left;
+    margin-left: 2px;
+    margin-top: 5px;
+}
+
+nav{
+    float: right;
+    line-height: 70px;
+    column-width: 100px;
+}
+
+nav l1{
+    display: inline-block;
+    padding: 5px 20px;
+    margin-left: 10px;
+    background: #f3f3f3;
+    line-height: normal;
+}
+
+a {
+    color:white !important;
+}
+/*..................end header..............................*/
+a:hover {
+    color: rgb(236, 131, 45) !important;
+}
+
+.nav-link {
+    color:white
+}
+.nav-link:active {
+    color:white
+}
+.button-container {
+    width:100%;
+    display: inline-block;
+    justify-content:center;
+}
+
+/*............................button 1 definition....................*/
+a.button1
+{
+    /* display:inline-block; */
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    /* box-sizing: border-box; */
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
+a.button1:hover
+{
+    color:rgb(236, 131, 45);
+    background-color:rgb(236, 131, 45);
+}
+
+@media all and (max-width:30em)
+{
+a.button1
+{
+    /* display:block; */
+    /* margin:0.4em auto; */
+}
+}
+/*.......................................................................*/
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 80%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+
+
