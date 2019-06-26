@@ -5,7 +5,7 @@ body
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: orange;
-    /* background: url(images/1add.jpg); */
+    background: url(images/bluck.jpg);
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -20,6 +20,10 @@ h1 /*pixelmaps*/
     font-family: 'Montserrat', sans-serif;
 }
 
+.card
+{
+    float: right;
+}
 
 h3 /*Is your shoot for business or personal*/
 {

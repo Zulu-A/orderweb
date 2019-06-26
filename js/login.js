@@ -31,14 +31,14 @@ function loginWithEmail(email, password) {
         console.log(errorMessage);
     });
 }
-
+// user email and password check event..........................................................................................................
 $('#loginbtn').on('click',function () {
     var loginEmail = document.getElementById('lemail').value;
     var loginPassword = document.getElementById('lpwd').value;
 
 
     loginWithEmail(loginEmail,loginPassword);
-
+// ..........................................................................................................................................
 });
 
 $('#loginbtn2').on('click',function () {
