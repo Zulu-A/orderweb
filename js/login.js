@@ -13,7 +13,7 @@ function loginWithEmail(email, password) {
             },3000);
         }else {
             setTimeout(function () {
-                window.location.href = 'order.html';
+                window.location.href = 'order.php';
             },3000);
         }
 

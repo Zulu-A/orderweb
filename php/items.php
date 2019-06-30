@@ -6,9 +6,10 @@ $username = "root";
 $password = "123";
 $dbname = "orderweb";
 
-$dbemail = $_POST['dbemail'];
-$dbfname = $_POST['dbfname'];
-$dblname = $_POST['dblname'];
+$itemname = $_POST['itemName'];
+$itemamount = $_POST['itemAmount'];
+$itemtimestamp = $_POST['itemTimestamp'];
+$itemimageurl = $_POST['itemURL'];
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -17,7 +18,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "insert into users(user_fname, user_lname, user_email) VALUES ('$dbfname','$dblname','$dbemail');";
+$sql = "insert into inventory(item_name, item_image_url, item_amount, item_timestamp) values ('$itemname','$itemimageurl','$itemamount','$itemtimestamp');";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
