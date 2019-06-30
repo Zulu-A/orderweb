@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db7b9afc-8c16-41c0-a705-d5f3581c9459" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/firebaseDB.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/storage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/checkItems.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/items.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f9f2b343-5f1b-4436-bdcf-1bed1e016d5a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f9f2b343-5f1b-4436-bdcf-1bed1e016d5a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/orderweb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/orderweb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Register.html" beforeDir="false" afterPath="$PROJECT_DIR$/Register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/adminpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/invoice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/users.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +213,7 @@
       <workItem from="1561329515133" duration="1370000" />
       <workItem from="1561331344769" duration="271000" />
       <workItem from="1561564258164" duration="449000" />
-      <workItem from="1561837698212" duration="10207000" />
+      <workItem from="1561837698212" duration="10614000" />
     </task>
     <task id="LOCAL-00001" summary="full auth done!">
       <created>1561078615926</created>
@@ -257,11 +243,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561564380443</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added item adding functionality">
+      <created>1561854761575</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561854761577</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added item adding functionality 2">
+      <created>1561854816516</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561854816516</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37480000" />
+    <option name="totallyTimeSpent" value="37887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -306,7 +306,9 @@
     <MESSAGE value="full auth done! plus auth message" />
     <MESSAGE value="admin page refer, customer page refer" />
     <MESSAGE value="order pages etc..." />
-    <option name="LAST_COMMIT_MESSAGE" value="order pages etc..." />
+    <MESSAGE value="added item adding functionality" />
+    <MESSAGE value="added item adding functionality 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="added item adding functionality 2" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/login.css">
