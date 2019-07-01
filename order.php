@@ -72,8 +72,52 @@
       </section>
 
 
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-database.js"></script>
       <script type="text/javascript" src="cart-js/cart.js"></script>
       <script type="text/javascript">
+
+
+          var firebaseConfig = {
+              apiKey: "AIzaSyCOJ8pkJzo3k1X_HOBc3qxINmktRb8hP2c",
+              authDomain: "orderweb-6fcda.firebaseapp.com",
+              databaseURL: "https://orderweb-6fcda.firebaseio.com",
+              projectId: "orderweb-6fcda",
+              storageBucket: "orderweb-6fcda.appspot.com",
+              messagingSenderId: "821925807231",
+              appId: "1:821925807231:web:dc2ce96473af3275"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+
+          var user = firebase.auth().currentUser;
+          var name, email, photoUrl, uid, emailVerified;
+
+          if (user != null) {
+              name = user.displayName;
+              email = user.email;
+              photoUrl = user.photoURL;
+              emailVerified = user.emailVerified;
+              uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+                               // this value to authenticate with your backend server, if
+                               // you have one. Use User.getToken() instead.
+
+              $('.btn').on('click',function () {
+                  var nm = document.getElementById('nm').value;
+                  var amnt = document.getElementById('amntT').value;
+                  var qty = document.getElementById('valval').value;
+                  var user = uid;
+
+                  sendcart(user,nm,amnt,qty,displayTime());
+
+
+              });
+          }
+
+
+
           Cart.init();
           Cart.on('added', function(argumentsObject) {
               console.log("You've added " + argumentsObject.item.id + " item(s).");
@@ -89,6 +133,52 @@
 
           Cart.itemsCount();
 
+
+
+
+
+
+
+
+          function sendcart(uid,name,amnt,quantity,time) {
+              $.ajax({
+                  type: "post",
+                  method: "POST",
+                  data: {uid:uid,name:name,qty:quantity,time:time,amnt:amnt},
+                  url: "php/addInventory.php",
+                  success: function (response) {
+                      console.log('response2: '+ response);
+                  }
+              });
+          }
+
+          function displayTime() {
+              var str = "";
+
+              var currentTime = new Date();
+              var hours = currentTime.getHours();
+              var minutes = currentTime.getMinutes();
+              var seconds = currentTime.getSeconds();
+              var year = currentTime.getFullYear();
+              var month = currentTime.getMonth();
+              var date = currentTime.getDate();
+
+              var monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+
+              if (minutes < 10) {
+                  minutes = "0" + minutes
+              }
+              if (seconds < 10) {
+                  seconds = "0" + seconds
+              }
+              str += hours + ":" + minutes + ":" + seconds + " ";
+              if(hours > 11){
+                  str += "PM "+ date +" " + monthName[month] + " " + year
+              } else {
+                  str += "AM " + date +" " + monthName[month] + " " + year
+              }
+              return str;
+          }
 
       </script>
 <!-- ....................................................^...........^.......................................................................       -->

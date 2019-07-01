@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db7b9afc-8c16-41c0-a705-d5f3581c9459" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/connect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/addInventory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/storage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/checkItems.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/checkItems.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +58,13 @@
         <item name="MySQL - orderweb@127.0.0.1" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="orderweb: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="invoice: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MySQL - orderweb@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="orderweb: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
@@ -73,8 +78,82 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/order.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="74" column="68" lean-forward="true" selection-start-line="74" selection-start-column="68" selection-end-line="74" selection-end-column="68" />
+            <state relative-caret-position="324">
+              <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-877" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/addInventory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="187" selection-start-line="19" selection-start-column="187" selection-end-line="19" selection-end-column="187" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/items.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adminpage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="124" column="8" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="124" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/firebaseDB.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/storage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="85" column="1" lean-forward="true" selection-start-line="59" selection-end-line="85" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="74" lean-forward="true" selection-start-line="63" selection-end-line="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/checkItems.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,10 +199,11 @@
         <option value="$PROJECT_DIR$/Register.html" />
         <option value="$PROJECT_DIR$/adminpage.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f9f2b343-5f1b-4436-bdcf-1bed1e016d5a/console_4.sql" />
-        <option value="$PROJECT_DIR$/php/checkItems.php" />
         <option value="$PROJECT_DIR$/js/storage.js" />
         <option value="$PROJECT_DIR$/js/select.js" />
         <option value="$PROJECT_DIR$/js/connect.js" />
+        <option value="$PROJECT_DIR$/php/addInventory.php" />
+        <option value="$PROJECT_DIR$/php/checkItems.php" />
         <option value="$PROJECT_DIR$/order.php" />
       </list>
     </option>
@@ -147,11 +227,6 @@
             <path>
               <item name="orderweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="orderweb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="orderweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="orderweb" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -206,7 +281,7 @@
       <workItem from="1561331344769" duration="271000" />
       <workItem from="1561564258164" duration="449000" />
       <workItem from="1561837698212" duration="10614000" />
-      <workItem from="1561936176840" duration="3382000" />
+      <workItem from="1561936176840" duration="7152000" />
     </task>
     <task id="LOCAL-00001" summary="full auth done!">
       <created>1561078615926</created>
@@ -250,16 +325,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561854816516</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added better js sql">
+      <created>1561940224364</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561940224364</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41269000" />
+    <option name="totallyTimeSpent" value="45039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28998384" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28998384" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -277,7 +360,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32869786" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32739726" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32739726" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -301,7 +384,8 @@
     <MESSAGE value="order pages etc..." />
     <MESSAGE value="added item adding functionality" />
     <MESSAGE value="added item adding functionality 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="added item adding functionality 2" />
+    <MESSAGE value="added better js sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="added better js sql" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/login.css" />
@@ -311,7 +395,6 @@
     <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/index.css" />
     <entry file="file://$PROJECT_DIR$/sql/db.sql" />
-    <entry file="file://$PROJECT_DIR$/login.html" />
     <entry file="file://$PROJECT_DIR$/js/login.js" />
     <entry file="file://$PROJECT_DIR$/js/logout.js" />
     <entry file="file://$PROJECT_DIR$/adminpage.css" />
@@ -324,23 +407,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/users.php" />
-    <entry file="file://$PROJECT_DIR$/js/firebaseDB.js" />
-    <entry file="file://$PROJECT_DIR$/Register.html" />
-    <entry file="file://$PROJECT_DIR$/js/register.js" />
-    <entry file="file://$PROJECT_DIR$/adminpage.html" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f9f2b343-5f1b-4436-bdcf-1bed1e016d5a/console_4.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/items.php" />
-    <entry file="file://$PROJECT_DIR$/php/checkItems.php" />
-    <entry file="file://$PROJECT_DIR$/js/storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -354,10 +424,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cart-js/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#241#248#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart-js/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/checkItems.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="70" lean-forward="true" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="74" lean-forward="true" selection-start-line="63" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/invoice.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/items.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-877" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="124" column="8" lean-forward="true" selection-start-line="101" selection-start-column="7" selection-end-line="124" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/firebaseDB.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="85" column="1" lean-forward="true" selection-start-line="59" selection-end-line="85" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/addInventory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="187" selection-start-line="19" selection-start-column="187" selection-end-line="19" selection-end-column="187" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="74" column="68" lean-forward="true" selection-start-line="74" selection-start-column="68" selection-end-line="74" selection-end-column="68" />
+        <state relative-caret-position="324">
+          <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
         </state>
       </provider>
     </entry>

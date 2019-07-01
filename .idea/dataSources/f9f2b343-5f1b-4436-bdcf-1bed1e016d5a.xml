@@ -928,69 +928,112 @@
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
     <table id="234" parent="9" name="inventory"/>
-    <table id="235" parent="9" name="users"/>
-    <column id="236" parent="234" name="item_id">
+    <table id="235" parent="9" name="invoice"/>
+    <table id="236" parent="9" name="users"/>
+    <column id="237" parent="234" name="item_id">
       <Position>1</Position>
       <DataType>int(30)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="237" parent="234" name="item_name">
+    <column id="238" parent="234" name="item_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="234" name="item_image_url">
+    <column id="239" parent="234" name="item_image_url">
       <Position>3</Position>
-      <DataType>varchar(50)|0s</DataType>
+      <DataType>varchar(5000)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="234" name="item_amount">
+    <column id="240" parent="234" name="item_amount">
       <Position>4</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="234" name="item_timestamp">
+    <column id="241" parent="234" name="item_timestamp">
       <Position>5</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="241" parent="234" name="PRIMARY">
+    <key id="242" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>item_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="242" parent="235" name="user_id">
+    <column id="243" parent="235" name="invoice_id">
       <Position>1</Position>
       <DataType>int(50)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="235" name="user_fname">
+    <column id="244" parent="235" name="invoice_name">
       <Position>2</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="235" name="user_lname">
+    <column id="245" parent="235" name="invoice_amnt">
       <Position>3</Position>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="235" name="user_email">
+    <column id="246" parent="235" name="invoice_quantity">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="247" parent="235" name="invoice_time">
+      <Position>5</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="248" parent="235" name="invoice_user">
+      <Position>6</Position>
+      <DataType>varchar(500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="249" parent="235" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>invoice_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="250" parent="236" name="user_id">
+      <Position>1</Position>
+      <DataType>int(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="251" parent="236" name="user_fname">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="252" parent="236" name="user_lname">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="253" parent="236" name="user_email">
       <Position>4</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="246" parent="235" name="PRIMARY">
+    <key id="254" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
