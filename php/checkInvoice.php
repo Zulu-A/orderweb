@@ -14,7 +14,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "select * from invoice";
+$sql = "select * from invoice where invoice_user = '$mail'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {

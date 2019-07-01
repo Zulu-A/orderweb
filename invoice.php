@@ -71,9 +71,9 @@
                   <th scope='col'>invoice user</th>
               </tr>
               </thead>
-              <tbody>
+              <tbody id="tbdy">
 
-              <?php require 'php/checkInvoice.php'; ?>
+              <?php /*require 'php/checkInvoice.php'; */?>
               </tbody>
           </table>
 
@@ -137,6 +137,7 @@
                   url: "php/checkInvoice.php",
                   success: function (response) {
                       console.log('response2: '+ response);
+                      $('#tbdy').append(response);
                   }
               });
           }
