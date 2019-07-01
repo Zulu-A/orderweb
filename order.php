@@ -10,6 +10,8 @@
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
        <style>
            .about-section {
                position: absolute;
@@ -51,7 +53,7 @@
                               <a class="nav-link" href="about.html" id="abt1">About</a>
                           </li>
                           <li class="nav-item">
-                              <a class="nav-link" href="invoice.html">Cart</a>
+                              <a class="nav-link" href="invoice.php">Cart</a>
                           </li>
                       </ul>
                   </div>
@@ -92,29 +94,77 @@
           // Initialize Firebase
           firebase.initializeApp(firebaseConfig);
 
-          var user = firebase.auth().currentUser;
+          var user1 = firebase.auth().currentUser;
+          console.log(user1);
           var name, email, photoUrl, uid, emailVerified;
 
-          if (user != null) {
-              name = user.displayName;
-              email = user.email;
-              photoUrl = user.photoURL;
-              emailVerified = user.emailVerified;
-              uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+          /*if (user1 != null) {
+
+              console.log(user1);
+              name = user1.displayName;
+              email = user1.email;
+              photoUrl = user1.photoURL;
+              emailVerified = user1.emailVerified;
+              uid = user1.uid;  // The user's ID, unique to the Firebase project. Do NOT use
                                // this value to authenticate with your backend server, if
                                // you have one. Use User.getToken() instead.
 
-              $('.btn').on('click',function () {
+              $('#cartBtn').on('click',function () {
                   var nm = document.getElementById('nm').value;
                   var amnt = document.getElementById('amntT').value;
                   var qty = document.getElementById('valval').value;
                   var user = uid;
+                  console.log('click');
 
                   sendcart(user,nm,amnt,qty,displayTime());
 
 
               });
-          }
+          }*/
+
+          var snacks = ['Cake', 'Pancakes', 'Snickers','Tea','Sausage','Samosa','Fries'];
+
+
+          firebase.auth().onAuthStateChanged(function(user) {
+              if (user) {
+                  // User is signed in.
+
+                  console.log(user.email);
+                  var maill = user.email;
+
+                  /*if (user.email != 'admin@orderweb.com') {
+                      window.location.href = 'order.html';
+                  }*/
+
+                  $('#cartBtn').on('click',function () {
+                      var nm = document.getElementById('nm').value;
+                      var amnt = document.getElementById('amntT').value;
+                      var qty = document.getElementById('valval').value;
+                      var user = uid;
+                      console.log('click');
+
+
+
+                      sendcart(maill,snacks[Math.floor(Math.random()* 8)],Math.floor(Math.random()* 100),Math.floor(Math.random() * 8)+1,displayTime());
+
+                  });
+
+              } else {
+                  // No user is signed in.
+              }
+          });
+
+          /*$('#cartBtn').on('click',function () {
+              var nm = document.getElementById('nm').value;
+              var amnt = document.getElementById('amntT').value;
+              var qty = document.getElementById('valval').value;
+              var user = uid;
+              console.log('click');
+
+              sendcart(user,nm,amnt,qty,displayTime());
+
+
+          });*/
 
 
 
@@ -144,7 +194,7 @@
               $.ajax({
                   type: "post",
                   method: "POST",
-                  data: {uid:uid,name:name,qty:quantity,time:time,amnt:amnt},
+                  data: {uid:uid,name:name,quantity:quantity,time:time,amnt:amnt},
                   url: "php/addInventory.php",
                   success: function (response) {
                       console.log('response2: '+ response);
