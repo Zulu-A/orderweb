@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db7b9afc-8c16-41c0-a705-d5f3581c9459" name="Default Changelist" comment="">
+    <list default="true" id="db7b9afc-8c16-41c0-a705-d5f3581c9459" name="Default Changelist" comment="node modules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/invoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/invoice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/checkInvoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/checkInvoice.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +84,7 @@
         <entry file="file://$PROJECT_DIR$/invoice.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
-              <caret line="139" column="40" lean-forward="true" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
+              <caret line="139" column="48" selection-start-line="139" selection-start-column="48" selection-end-line="139" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -269,7 +267,7 @@
       <workItem from="1561837698212" duration="10614000" />
       <workItem from="1561936176840" duration="7152000" />
       <workItem from="1561946641558" duration="3817000" />
-      <workItem from="1561950928806" duration="528000" />
+      <workItem from="1561950928806" duration="1110000" />
     </task>
     <task id="LOCAL-00001" summary="full auth done!">
       <created>1561078615926</created>
@@ -327,15 +325,28 @@
       <option name="project" value="LOCAL" />
       <updated>1561950357625</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="invoice in js with filter">
+      <created>1561951813969</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561951813969</updated>
+    </task>
+    <task id="LOCAL-00010" summary="node modules">
+      <created>1561952206866</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561952206866</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49384000" />
+    <option name="totallyTimeSpent" value="49966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2996769" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -380,7 +391,9 @@
     <MESSAGE value="added item adding functionality" />
     <MESSAGE value="added item adding functionality 2" />
     <MESSAGE value="added better js sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="added better js sql" />
+    <MESSAGE value="invoice in js with filter" />
+    <MESSAGE value="node modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="node modules" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/login.css" />
@@ -508,7 +521,7 @@
     <entry file="file://$PROJECT_DIR$/invoice.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
-          <caret line="139" column="40" lean-forward="true" selection-start-line="139" selection-start-column="40" selection-end-line="139" selection-end-column="40" />
+          <caret line="139" column="48" selection-start-line="139" selection-start-column="48" selection-end-line="139" selection-end-column="48" />
         </state>
       </provider>
     </entry>
