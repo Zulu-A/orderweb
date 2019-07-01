@@ -35,10 +35,10 @@ function newOrder(name, image, amount) {
             username: name,
             imageURL: image,
             amount: amount,
-            timestamp : Date.now()
+            timestamp : displayTime()
         }).then(function () {
             console.log('New item added');
-            sendItem(name,image,amount,Date.now());
+            sendItem(name,image,amount,displayTime());
             document.getElementById('uploadStatus').classList.add('alert-success');
             document.getElementById('uploadStatus').innerText = 'New item Added: ' + name;
         });
@@ -55,4 +55,32 @@ function sendItem(name, image, amount, timestamp) {
             console.log('response3: '+ response);
         }
     });
+}
+
+function displayTime() {
+    var str = "";
+
+    var currentTime = new Date();
+    var hours = currentTime.getHours();
+    var minutes = currentTime.getMinutes();
+    var seconds = currentTime.getSeconds();
+    var year = currentTime.getFullYear();
+    var month = currentTime.getMonth();
+    var date = currentTime.getDate();
+
+    var monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+
+    if (minutes < 10) {
+        minutes = "0" + minutes
+    }
+    if (seconds < 10) {
+        seconds = "0" + seconds
+    }
+    str += hours + ":" + minutes + ":" + seconds + " ";
+    if(hours > 11){
+        str += "PM "+ date +" " + monthName[month] + " " + year
+    } else {
+        str += "AM " + date +" " + monthName[month] + " " + year
+    }
+    return str;
 }
