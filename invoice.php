@@ -45,18 +45,6 @@
           
       </header>
 <!-- .......................................................................................................................................... -->
-      <!-- <div class="sidenav">
-         <div class="logo" id="text1" style=color:white;>
-            <h2>Order Now.</h2>
-
-            <div class = "logo">
-               <img src = "images/PM-logo-white.png" width ="200" title ="">
-               <h1>PM FOODS</h1>
-         </div>
-
-         </div>
-
-      </div> -->
 
 
       <section style="margin-top: 80px;">
@@ -116,10 +104,7 @@
 
                   send2(maill);
 
-                  /*if (user.email != 'admin@orderweb.com') {
-                      window.location.href = 'order.html';
-                  }*/
-
+        
 
 
               } else {

@@ -98,30 +98,6 @@
           console.log(user1);
           var name, email, photoUrl, uid, emailVerified;
 
-          /*if (user1 != null) {
-
-              console.log(user1);
-              name = user1.displayName;
-              email = user1.email;
-              photoUrl = user1.photoURL;
-              emailVerified = user1.emailVerified;
-              uid = user1.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-                               // this value to authenticate with your backend server, if
-                               // you have one. Use User.getToken() instead.
-
-              $('#cartBtn').on('click',function () {
-                  var nm = document.getElementById('nm').value;
-                  var amnt = document.getElementById('amntT').value;
-                  var qty = document.getElementById('valval').value;
-                  var user = uid;
-                  console.log('click');
-
-                  sendcart(user,nm,amnt,qty,displayTime());
-
-
-              });
-          }*/
-
           var snacks = ['Cake', 'Pancakes', 'Snickers','Tea','Sausage','Samosa','Fries'];
 
 
@@ -153,40 +129,6 @@
                   // No user is signed in.
               }
           });
-
-          /*$('#cartBtn').on('click',function () {
-              var nm = document.getElementById('nm').value;
-              var amnt = document.getElementById('amntT').value;
-              var qty = document.getElementById('valval').value;
-              var user = uid;
-              console.log('click');
-
-              sendcart(user,nm,amnt,qty,displayTime());
-
-
-          });*/
-
-
-
-          Cart.init();
-          Cart.on('added', function(argumentsObject) {
-              console.log("You've added " + argumentsObject.item.id + " item(s).");
-          });
-
-          Cart.addItem({
-              id: '123456',
-              price: 499,
-              quantity: 5,
-              label: 'Water based marker',
-              image: "/img/product/123456.jpg"
-          });
-
-          Cart.itemsCount();
-
-
-
-
-
 
 
 
