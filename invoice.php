@@ -61,7 +61,7 @@
               </thead>
               <tbody id="tbdy">
 
-              <?php /*require 'php/checkInvoice.php'; */?>
+              <?php require 'php/checkTotal.php.php'; ?>
               </tbody>
           </table>
 
