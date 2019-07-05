@@ -14,7 +14,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "select sum(invoice_amnt) from invoice where invoice_user = '$mail';";
+$sql = "select sum(invoice_amnt) as 'invoiceamnt' from invoice where invoice_user = '$mail';";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
                   <td> - </td>
                   <td> - </td>
                   <td> - </td>
-                  <td>".$row['invoice_user']."</td>
+                  <td>".$row['invoiceamnt']."</td>
               </tr>";
     }
 } else {

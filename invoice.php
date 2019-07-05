@@ -61,7 +61,7 @@
               </thead>
               <tbody id="tbdy">
 
-              <?php require 'php/checkTotal.php.php'; ?>
+              <?php require 'php/checkTotal.php'; ?>
               </tbody>
           </table>
 
@@ -123,6 +123,16 @@
                   success: function (response) {
                       console.log('response2: '+ response);
                       $('#tbdy').append(response);
+                      $.ajax({
+                            type: "post",
+                             method: "POST",
+                            data: {umail:umail},
+                            url: "php/checkTotal.php",
+                            success: function (response) {
+                                console.log('response3x: '+ response);
+                                    $('#tbdy').append(response);
+                  }
+              });
                   }
               });
           }
