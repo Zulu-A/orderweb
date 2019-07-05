@@ -98,7 +98,7 @@
           console.log(user1);
           var name, email, photoUrl, uid, emailVerified;
 
-          var snacks = ['Cake', 'Pancakes', 'Snickers','Tea','Sausage','Samosa','Fries'];
+          var snacks = ['Burger', 'Pizza', 'Fries','Salad','Sausage','Samosa','Tea'];
 
 
           firebase.auth().onAuthStateChanged(function(user) {
